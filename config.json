@@ -1,10 +1,12 @@
 {
-  "servers": {
-    "deepl": {
-      "command": "npx",
-      "args": ["deepl-mcp-server"],
-      "env": {
-        "DEEPL_API_KEY": "${DEEPL_API_KEY}"
+  "mcpProxy": {
+    "servers": {
+      "deepl": {
+        "command": "npx",
+        "args": ["deepl-mcp-server"],
+        "env": {
+          "DEEPL_API_KEY": "${DEEPL_API_KEY}"
+        }
       }
     }
   }
