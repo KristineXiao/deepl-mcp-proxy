@@ -1,14 +1,12 @@
 # force rebuild
 
-FROM ghcr.io/tbxark/mcp-proxy:latest
+FROM node:20
 
 ENV PORT=8080
 EXPOSE 8080
 
-RUN apt-get update && apt-get install -y --no-install-recommends nodejs npm
-
-RUN npm install -g deepl-mcp-server@latest
+RUN npm install -g @tbxark/mcp-proxy deepl-mcp-server
 
 COPY config.json /config.json
 
-CMD ["-config", "/config.json"]
+CMD ["mcp-proxy", "-config", "/config.json"]
