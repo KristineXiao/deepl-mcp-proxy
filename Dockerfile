@@ -5,6 +5,4 @@ EXPOSE 8080
 
 RUN npm install -g deepl-mcp-server@latest
 
-COPY config.json /config.json
-
-CMD ["deepl-mcp-server"]
+CMD ["deepl-mcp-server", "--transport", "http", "--port", "8080"]
