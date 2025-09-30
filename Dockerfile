@@ -1,3 +1,5 @@
+# force rebuild
+
 FROM ghcr.io/tbxark/mcp-proxy:latest
 
 ENV PORT=8080
