@@ -2,8 +2,8 @@
   "mcpProxy": {
     "servers": {
       "deepl": {
-        "command": "deepl-mcp-server",
-        "args": [],
+        "command": "npx",
+        "args": ["deepl-mcp-server"],
         "env": {
           "DEEPL_API_KEY": "${DEEPL_API_KEY}"
         }
